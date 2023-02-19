@@ -330,7 +330,6 @@ export class TransformOperationExecutor {
               // Set default value if nothing provided
               finalValue = newValue[newValueKey];
             } else {
-              finalValue = this.transform(subSource, subValue, type, arrayType, isSubValueMap, level + 1);
               finalValue = this.applyCustomTransformations(
                 finalValue,
                 targetType as Function,
@@ -338,6 +337,9 @@ export class TransformOperationExecutor {
                 value,
                 this.transformationType
               );
+              if (!finalValue) {
+                finalValue = this.transform(subSource, subValue, type, arrayType, isSubValueMap, level + 1);
+              }
             }
           }
 
