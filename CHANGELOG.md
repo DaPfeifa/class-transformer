@@ -2,6 +2,12 @@
 
 _This changelog follows the [keep a changelog][keep-a-changelog]_ format to maintain a human readable changelog.
 
+### [0.5.5][v0.5.5] [BREAKING CHANGE] - 2023-02-19
+
+#### Changed
+
+- only fixed npm publishing dist files
+
 ### [0.5.2][v0.5.2] [BREAKING CHANGE] - 2023-02-19
 
 #### Changed
