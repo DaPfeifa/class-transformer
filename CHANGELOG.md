@@ -2,6 +2,12 @@
 
 _This changelog follows the [keep a changelog][keep-a-changelog]_ format to maintain a human readable changelog.
 
+### [0.5.2][v0.5.2] [BREAKING CHANGE] - 2023-02-19
+
+#### Changed
+
+- default transformer will be ignored if a custom transformer is set. Useful for classes, which don't have a constructor without parameters. e.g. Decimal.js
+
 ### [0.5.1][v0.5.1] [BREAKING CHANGE] - 2021-11-22
 
 #### Changed
